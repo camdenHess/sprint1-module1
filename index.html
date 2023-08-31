@@ -1,0 +1,134 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Lauri Markkanen Fanpage</title>
+      <style>
+        body {
+          padding: 10px;
+          background-color: rgb(131, 221, 224 ,0.5);
+        }
+        a {
+          padding: 10px;
+        }
+        h1 {
+          color:rgb(0, 0, 0);
+        }
+        figcaption {
+          font-size: 14px;
+        }
+        h2 {
+          color: rgb(122, 58, 154);
+        }
+        img {
+          width: 200px;
+          border: 3px solid black;
+        }
+      </style>
+    </head>
+
+    <body>
+      <header>
+        <h1>Lauri Markkanen Bio</h1>
+        <nav>
+          <a href="intro">Introduction</a>
+          <a href="#earlyLife">Early Life</a>
+          <a href="#college">College</a>
+          <a href="#nba">NBA</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+
+        <section id="intro">
+          <h2>Introduction</h2>
+          <aside>
+            <figure>
+              <img src="https://cdn.vox-cdn.com/thumbor/xOntvJ47l1EsV1vCyRTt-KYnL6M=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24424068/1463866210.jpg" alt="A picture of Lauri Markkanen">
+              <figcaption>A picture of Lauri Markkanen taken while on the Utah Jazz during the 2022 season.</figcaption>
+            </figure>
+          </aside>
+          <p>Lauri Markkanen (also know as the "Finnisher") is a 26 year old Finnish NBA basketball player that currently plays for the Utah Jazz. He is 7 feet tall with a giant wingpsan to match.</p>
+        </section>
+
+        <section id="earlyLife">
+          <h2>Early Life</h2>
+          <p>Markkanen grew up in Jyväskylä, and played his junior years in the local team, HoNsU. Markkanen played for HBA-Märsky in the Finnish second-tier league from 2014 to 2016.</p>
+        </section>
+
+        <section id="college">
+          <h2>College</h2>
+          <p>On 17 October 2015, Markkanen verbally committed to NCAA Division I squad Arizona Wildcats prior to the 2016–17 season. Lauri signed a letter of intent to Arizona on 11 November. ESPN.com reported that the seven-foot Finn was considered "a possible one-and-done candidate for the NBA draft." He became the first Wildcats player since Mike Bibby to wear the jersey number 10. In January 2017, SB Nation regarded him as "the best shooting 7-footer college basketball has ever seen". Within the same month Markkanen was selected as Pac-12 Player of the Week as well as the Oscar Robertson National Player of the Week. He has also been named to the pre-season Karl Malone Award Watchlist, Naismith Award Watchlist, Wooden Award Watchlist, Wooden Award Midseason Top 25, Wayman Tisdale Award Midseason watch list, Oscar Robertson Award Midseason watch list, Karl Malone Award Finalist, Naismith Top 30 Finalist. Markkanen was among the 15 finalists for the John R. Wooden Award.</p>
+          <p>At the conclusion of his freshman season, Markkanen announced his intention to forgo his final three years of collegiate eligibility and enter the 2017 NBA draft.</p>
+        </section>
+
+        <section id="nba">
+          <h2>NBA</h2>
+          <ul>
+            <li>
+              <h3>Chicago Bulls</h3>
+              </li>
+              <p>Markkanen was drafted by the Minnesota Timberwolves with the seventh pick of the first round of the 2017 NBA draft. On draft night, his rights were traded to the Chicago Bulls along with Zach LaVine and Kris Dunn for Jimmy Butler and the rights to Justin Patton. On 5 July 2017, Markkanen signed with the Bulls.</p>
+            <li>
+              <h3>Cleveland Cavaliers</h3>
+            </li>
+              <p>On 28 August 2021, Markkanen was acquired by the Cleveland Cavaliers in a three-team sign-and-trade also involving the Portland Trail Blazers.</p>
+            <li>
+              <h3>Utah Jazz</h3>
+            </li>
+              <p>On 1 September 2022, Markkanen was traded, alongside Ochai Agbaji, Collin Sexton, three first round picks, and two pick swaps, to the Utah Jazz in exchange for Donovan Mitchell.</p>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Creator</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <form action="">
+            <label>email
+              <input type="email" placeholder="type email">
+            </label>
+            <label>message
+              <input type="text" placeholder="type message">
+            </label>
+          </form>
+        </section>
+
+      </main>
+      <footer>
+      </footer>
+    </body>
+
+    </html>
